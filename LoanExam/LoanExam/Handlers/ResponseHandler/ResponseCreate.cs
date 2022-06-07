@@ -10,7 +10,7 @@ public class ResponseCreate
         bool loanConfirmed = false;
         switch (points)
         {
-            case > 80 and <= 83:
+            case >= 80 and <= 83:
                 percent = 30;
                 loanConfirmed = true;
                 break;

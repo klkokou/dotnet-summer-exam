@@ -270,9 +270,9 @@ export function CalculateLoan() {
                                             label={"Employment"}
                                             onChange={field.onChange}>
                                         <MenuItem value={"EmploymentContract"}
-                                                  key={"EmploymentContract"}>{"EmploymentContract"}</MenuItem>
+                                                  key={"EmploymentContract"}>{"Employment Contract"}</MenuItem>
                                         <MenuItem value={"IndividualEntrepreneur"}
-                                                  key={"IndividualEntrepreneur"}>{"IndividualEntrepreneur"}</MenuItem>
+                                                  key={"IndividualEntrepreneur"}>{"Individual Entrepreneur"}</MenuItem>
                                         <MenuItem value={"Freelancer"} key={"Freelancer"}>{"Freelancer"}</MenuItem>
                                         <MenuItem value={"Retired"} key={"Retired"}>{"Retired"}</MenuItem>
                                         <MenuItem value={"Unemployed"} key={"Unemployed"}>{"Unemployed"}</MenuItem>
@@ -310,7 +310,7 @@ export function CalculateLoan() {
                                             label={"Purpose"}
                                             onChange={field.onChange}>
                                         <MenuItem value={"ConsumerLoan"}
-                                                  key={"ConsumerLoan"}>{"ConsumerLoan"}</MenuItem>
+                                                  key={"ConsumerLoan"}>{"Consumer Loan"}</MenuItem>
                                         <MenuItem value={"Property"} key={"Property"}>{"Property"}</MenuItem>
                                         <MenuItem value={"Reloaning"} key={"Reloaning"}>{"Reloaning"}</MenuItem>
                                     </Select>
@@ -346,8 +346,8 @@ export function CalculateLoan() {
                                             onChange={field.onChange}>
                                         <MenuItem value={"None"} key={"None"}>{"None"}</MenuItem>
                                         <MenuItem value={"Property"} key={"Property"}>{"Property"}</MenuItem>
-                                        <MenuItem value={"NewCar"} key={"NewCar"}>{"NewCar"}</MenuItem>
-                                        <MenuItem value={"OldCar"} key={"OldCar"}>{"OldCar"}</MenuItem>
+                                        <MenuItem value={"NewCar"} key={"NewCar"}>{"New Car age < 3"}</MenuItem>
+                                        <MenuItem value={"OldCar"} key={"OldCar"}>{"Old Car age >=3"}</MenuItem>
                                         <MenuItem value={"Guarantee"} key={"Guarantee"}>{"Guarantee"}</MenuItem>
                                     </Select>
                                     <FormHelperText>{errors.deposit?.message}</FormHelperText>
