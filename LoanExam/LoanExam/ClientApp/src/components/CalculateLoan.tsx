@@ -128,7 +128,6 @@ export function CalculateLoan() {
                                 required: {value: true, message: "Name required"},
                                 minLength: {value: 1, message: "Min length - 1"},
                                 maxLength: {value: 50, message: "Max length - 50"},
-                                pattern: {value: /^[^\\d\\W]+$/, message: "Only letters"}
                             })}/>
                     </Grid>
                     <Grid item xs={2} sm={4} md={4}>
@@ -141,7 +140,6 @@ export function CalculateLoan() {
                                 required: {value: true, message: "Patronymic required"},
                                 minLength: {value: 1, message: "Min length - 1"},
                                 maxLength: {value: 50, message: "Max length - 50"},
-                                pattern: {value: /^[^\\d\\W]+$/, message: "Only letters"}
                             })}/>
                     </Grid>
                 </Grid>
@@ -195,6 +193,8 @@ export function CalculateLoan() {
                             control={control}
                             rules={{
                                 required: {value: true, message: "Required"},
+                                validate: (value) =>
+                                    !value || value < new Date() ? true : "Wrong date",
                             }}
                             render={({field}) => (
                                 <DatePicker
